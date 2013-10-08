@@ -13,6 +13,7 @@ public class ReportWriter {
 	private static String LOCATION_PROPERTY_NAME = "location";
 	private static String DESCRIPTION_PROPERTY_NAME = "description";
 	private static String CATEGORY_PROPERTY_NAME = "category";
+	private static String REPORTERID_PROPERTY_NAME= "reporterid";
 	
 	/**.
 	 * 
@@ -72,10 +73,12 @@ public class ReportWriter {
 				report.setDescription(value);
 			}else if (key.equalsIgnoreCase(CATEGORY_PROPERTY_NAME)){
 				report.setCetegoryId(Integer.valueOf(value));
+			}else if (key.equalsIgnoreCase(REPORTERID_PROPERTY_NAME)){
+				report.setReporterId(value);
 			}
 		}
 		
-		report.setReporterId("user");
+		//report.setReporterId("user");
 		return report;
 	}
 }
