@@ -78,7 +78,7 @@ public class ReportWriter {
 			}
 		}
 		
-		//report.setReporterId("user");
+		report.setStatus("Not processed");
 		return report;
 	}
 }
